@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>valuetask_task_performance.MemoryBenchmark-20220205-010314</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.22000
+Intel Core i7-9750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
+.NET SDK=6.0.100
+  [Host]     : .NET 5.0.13 (5.0.1321.56516), X64 RyuJIT  [AttachedDebugger]
+  DefaultJob : .NET 5.0.13 (5.0.1321.56516), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>            Method</th><th>   Mean</th><th> Error</th><th>StdDev</th><th> Median</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>RunTaskWithOutCache</td><td>285,241.20 &mu;s</td><td>4,760.612 &mu;s</td><td>3,975.327 &mu;s</td><td>285,950.60 &mu;s</td><td>403,384 B</td>
+</tr><tr><td>RunValueTaskWithOutCache</td><td>293,853.58 &mu;s</td><td>5,604.150 &mu;s</td><td>4,679.719 &mu;s</td><td>294,591.70 &mu;s</td><td>399,752 B</td>
+</tr><tr><td>RuntaskWithCache</td><td>34.01 &mu;s</td><td>0.544 &mu;s</td><td>1.098 &mu;s</td><td>33.50 &mu;s</td><td>7,536 B</td>
+</tr><tr><td>RunValuetaskWithCache</td><td>29.80 &mu;s</td><td>0.590 &mu;s</td><td>1.257 &mu;s</td><td>29.20 &mu;s</td><td>336 B</td>
+</tr></tbody></table>
+</body>
+</html>

@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 namespace valuetask_task_performance
 {
 
-    public class GitHubServices
+    public class HttpServices
     {
         readonly HttpClient httpClient = new HttpClient();
         IMemoryCache memoryCache = new MemoryCache(new MemoryCacheOptions());
-        public GitHubServices()
+        public HttpServices()
         {
             httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("Valuetask");
         }

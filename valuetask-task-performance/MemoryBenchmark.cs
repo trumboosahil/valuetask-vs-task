@@ -10,7 +10,7 @@ namespace valuetask_task_performance
     [MemoryDiagnoser]
     public class MemoryBenchmark
     {
-        GitHubServices gitHubServices = new GitHubServices();
+        HttpServices gitHubServices = new HttpServices();
         [Benchmark]
         public async Task RunTaskWithOutCache()
         {
